@@ -1,0 +1,64 @@
+{
+  "persistence": {
+    "candidate_id": 0,
+    "parameters": {},
+    "mean_fold_mae": 1.990406088851343
+  },
+  "ridge": {
+    "candidate_id": 3,
+    "parameters": {
+      "alpha": 1000.0
+    },
+    "mean_fold_mae": 1.934306787114398
+  },
+  "random_forest": {
+    "candidate_id": 1,
+    "parameters": {
+      "max_depth": 6,
+      "min_samples_leaf": 15
+    },
+    "mean_fold_mae": 1.901735518151626
+  },
+  "cnn": {
+    "candidate_id": 1,
+    "parameters": {
+      "width": 8,
+      "learning_rate": 0.0003,
+      "dropout": 0.1
+    },
+    "mean_fold_mae": 2.0754366513417093,
+    "epochs_by_seed": {
+      "11": 51,
+      "22": 35,
+      "33": 49
+    }
+  },
+  "lstm": {
+    "candidate_id": 1,
+    "parameters": {
+      "width": 8,
+      "learning_rate": 0.0003,
+      "dropout": 0.1
+    },
+    "mean_fold_mae": 1.8757399335954839,
+    "epochs_by_seed": {
+      "11": 43,
+      "22": 30,
+      "33": 56
+    }
+  },
+  "cnn_lstm": {
+    "candidate_id": 1,
+    "parameters": {
+      "width": 8,
+      "learning_rate": 0.0003,
+      "dropout": 0.1
+    },
+    "mean_fold_mae": 1.914555958044896,
+    "epochs_by_seed": {
+      "11": 49,
+      "22": 40,
+      "33": 46
+    }
+  }
+}

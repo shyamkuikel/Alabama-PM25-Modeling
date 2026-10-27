@@ -1,0 +1,77 @@
+{
+  "device": "cpu",
+  "architecture": "arm64",
+  "elapsed_seconds": 353.91600829176605,
+  "lookback": 14,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "models": [
+    "persistence",
+    "ridge",
+    "random_forest",
+    "cnn",
+    "lstm",
+    "cnn_lstm"
+  ],
+  "test_status": "exploratory: previously inspected outcomes",
+  "args": {
+    "workbook": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/Meterological_data_ALAbama_copy.xlsx",
+    "data": "data/merged_counties.xlsx",
+    "output": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/pooled_county_study/results",
+    "models": [
+      "persistence",
+      "ridge",
+      "random_forest",
+      "cnn",
+      "lstm",
+      "cnn_lstm"
+    ],
+    "device": "cpu",
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "lookback": 14,
+    "epochs": 60,
+    "patience": 8,
+    "batch_size": 64,
+    "trees": 150,
+    "threads": 2,
+    "bootstrap": 1000,
+    "smoke": false
+  },
+  "input_sha256": "d987a7049c14d91ee99489958c1f60f2f81792ac3a31d2f0478e581071f53ed1",
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.1",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "code_sha256": {
+    "verify_results.py": "dab2b03538ee9db88098bb85491f663e89a951963f56033c0f422b27002b51f7",
+    "run_study.py": "b0f0429df455d56ecefddda2f5e26dc9773515a402ed7a65624a9597e89d5931",
+    "predict_saved.py": "b93a625de63137abbc1295d1a1916c200289c8927bc78ee8d6e0c7b38a792459",
+    "prepare_data.py": "0fba7468a0655708f0e3d15cfa5d466e0133b4d60f8b640db379d90b2a086c39",
+    "preprocessing.py": "2dfd69216a239e2bb47bd866eea54baf9368d992e19fe176f21aa25eda7b17e2",
+    "splits.py": "6284c580c188acb3cc2d2c26e9eb03ad8bd30d8e79b1c6cafb98e4f03d758ab8",
+    "test_pipeline.py": "95c2a2a3f01059cb364dd6fa68427454329dfd755a6aea4287af63c589b5e9e7",
+    "training.py": "6065698b434b435c76297c4f2f3bb88a9f5ac962f61245dcd62b797fd66c7690",
+    "reporting.py": "97abab8fa07a2d931dcc31574bee9af909c9c9eb18e06974df438cebffa255fb",
+    "models/persistence.py": "05f2b2841d84cce2b35644dff5db23cba389cfa00d68ca2dd6ec14c7a6af9b6a",
+    "models/cnn_lstm.py": "cc64aadae9b75b0b0dbb32d084e7b982c57f265a07560f33d323f6a7ff9d8425",
+    "models/__init__.py": "c1f8ba35f0ad1e57cd6c169a4cf0d4bd2eea1bb6e8ee8261cc846ef4fe3f3d1d",
+    "models/cnn.py": "d4d4cccca8e519711275b8aa16b98bf189ea192019820ba44095623090a77f4c",
+    "models/common.py": "e69fef40a8046ababbada632ebfcfd74410a592c092f704315a15be3bf019107",
+    "models/ridge.py": "58f445c96b847b4c1b411429664592a19211e2bcfd92d0f710d34b7ae6d0f54e",
+    "models/lstm.py": "646ba0e6e002a4e000e3dabbadd31a559671e8b483ea53056095c0f1bae0db1b",
+    "models/random_forest.py": "0ec46c9e44bd7e4c992263e08ca64827811cc50179f5684ae20ee380ca7846b5"
+  },
+  "checkpoint_roundtrip_verified": true
+}

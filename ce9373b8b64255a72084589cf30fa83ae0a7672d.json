@@ -1,0 +1,6 @@
+{
+  "same_test_cases": true,
+  "finite_predictions": true,
+  "test_after_selection": true,
+  "selected_candidates_minimize_mean_cv_mae": true
+}

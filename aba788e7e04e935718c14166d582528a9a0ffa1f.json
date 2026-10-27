@@ -1,0 +1,124 @@
+{
+  "workbook": "PCA/Meterological data ALAbama .xlsx",
+  "variance_target": 0.8,
+  "low_threshold": 0.5,
+  "redundancy_threshold": 0.9,
+  "python": "3.14.2",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "counties": [
+    {
+      "county": "Baldwin",
+      "sheet": "Baldwin",
+      "input_rows": 365,
+      "complete_rows": 363,
+      "dropped_rows": 2,
+      "retained_components": 3,
+      "retained_variance": 0.8427311907676477,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Clay",
+      "sheet": "Clay",
+      "input_rows": 365,
+      "complete_rows": 365,
+      "dropped_rows": 0,
+      "retained_components": 3,
+      "retained_variance": 0.8344340635206642,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "DeKalb",
+      "sheet": "Dekalb",
+      "input_rows": 365,
+      "complete_rows": 365,
+      "dropped_rows": 0,
+      "retained_components": 3,
+      "retained_variance": 0.8274538260901003,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Etowah",
+      "sheet": "Etohaw",
+      "input_rows": 365,
+      "complete_rows": 357,
+      "dropped_rows": 8,
+      "retained_components": 4,
+      "retained_variance": 0.9144803616156647,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Jefferson",
+      "sheet": "Jefferson_NB",
+      "input_rows": 365,
+      "complete_rows": 365,
+      "dropped_rows": 0,
+      "retained_components": 4,
+      "retained_variance": 0.9097337111221468,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Mobile",
+      "sheet": "Mobile",
+      "input_rows": 365,
+      "complete_rows": 359,
+      "dropped_rows": 6,
+      "retained_components": 3,
+      "retained_variance": 0.850124319439136,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Montgomery",
+      "sheet": "Montgomery",
+      "input_rows": 365,
+      "complete_rows": 357,
+      "dropped_rows": 8,
+      "retained_components": 4,
+      "retained_variance": 0.919333380989215,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Morgan",
+      "sheet": "Morgan",
+      "input_rows": 365,
+      "complete_rows": 362,
+      "dropped_rows": 3,
+      "retained_components": 3,
+      "retained_variance": 0.8047495583089731,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    },
+    {
+      "county": "Sumter",
+      "sheet": "Sumter",
+      "input_rows": 365,
+      "complete_rows": 351,
+      "dropped_rows": 14,
+      "retained_components": 3,
+      "retained_variance": 0.9110740385425827,
+      "all_components_retained": false,
+      "excluded_variables": {
+        "Precipitation": "constant"
+      }
+    },
+    {
+      "county": "Tuscaloosa",
+      "sheet": "Tuscaloosa",
+      "input_rows": 365,
+      "complete_rows": 365,
+      "dropped_rows": 0,
+      "retained_components": 3,
+      "retained_variance": 0.8293593195657144,
+      "all_components_retained": false,
+      "excluded_variables": {}
+    }
+  ],
+  "workbook_sha256": "b542b986e1a33c3fce13964b714a4b9551baf78a8d614bd5edb9a909fb9a77a2"
+}

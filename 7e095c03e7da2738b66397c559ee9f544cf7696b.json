@@ -1,0 +1,13 @@
+{
+  "all_candidates_have_three_folds": true,
+  "settings_selected_from_cv_only": true,
+  "all_preprocessing_recomputed_from_training_only": true,
+  "epochs_match_prescribed_median_rule": true,
+  "all_models_same_test_cases": true,
+  "metrics_recomputed": true,
+  "ensemble_predictions_recomputed": true,
+  "temporal_windows_and_splits_verified": true,
+  "paired_differences_recomputed": true,
+  "input_hash_matches": true,
+  "model_checkpoint_roundtrip": true
+}

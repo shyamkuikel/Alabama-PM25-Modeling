@@ -1,0 +1,10 @@
+model,seed,parameters
+cnn,11,1593
+cnn,22,1593
+cnn,33,1593
+lstm,11,1113
+lstm,22,1113
+lstm,33,1113
+cnn_lstm,11,1265
+cnn_lstm,22,1265
+cnn_lstm,33,1265
