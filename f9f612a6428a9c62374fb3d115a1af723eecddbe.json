@@ -1,0 +1,22 @@
+[
+  {
+    "file": "epa_alabama_88101_2025.csv",
+    "source_url": "https://aqs.epa.gov/aqsweb/airdata/daily_88101_2025.zip",
+    "retrieved": "2026-10-11",
+    "sha256": "aa4c5708cdfaacf1693b72c16028ce20d92664ba377f201aafdb99306d64fb4d",
+    "extraction": "National parameter 88101 ZIP filtered to State Code == 1; all original columns retained.",
+    "national_zip_sha256": "cc8cb80bcc0317705202d12a472918438b8bee60316f54777d6f748c58ac2661"
+  },
+  {
+    "file": "weather_2025.csv",
+    "source_url": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?station=BFM&station=ASN&station=4A9&station=GAD&station=BHM&station=MXF&station=DCU&station=DYA&station=TCL&data=all&year1=2025&month1=1&day1=1&year2=2026&month2=1&day2=1&tz=America%2FChicago&format=onlycomma&latlon=no&elev=no&missing=M&trace=T&direct=no&report_type=3&report_type=4",
+    "retrieved": "2026-10-11",
+    "sha256": "21e52e3f4c7ddf72bde2b7c33fdd0d5775c562f19fb42a1840da399cf70e9ca3"
+  },
+  {
+    "file": "al_asos_stations.geojson",
+    "source_url": "https://mesonet.agron.iastate.edu/geojson/network/AL_ASOS.geojson",
+    "retrieved": "2026-10-11",
+    "sha256": "9b6e3864274c1a1c017c415e931c137b3d0b55ec5063b5d085ead287e6054789"
+  }
+]

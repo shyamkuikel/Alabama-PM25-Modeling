@@ -1,0 +1,79 @@
+[
+  {
+    "family": "cnn",
+    "seed": 11,
+    "file": "models/cnn_seed_11.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "cnn",
+    "seed": 22,
+    "file": "models/cnn_seed_22.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "cnn",
+    "seed": 33,
+    "file": "models/cnn_seed_33.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "lstm",
+    "seed": 11,
+    "file": "models/lstm_seed_11.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "lstm",
+    "seed": 22,
+    "file": "models/lstm_seed_22.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "lstm",
+    "seed": 33,
+    "file": "models/lstm_seed_33.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "cnn_lstm",
+    "seed": 11,
+    "file": "models/cnn_lstm_seed_11.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "cnn_lstm",
+    "seed": 22,
+    "file": "models/cnn_lstm_seed_22.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "cnn_lstm",
+    "seed": 33,
+    "file": "models/cnn_lstm_seed_33.pt",
+    "format": "torch_state_dict"
+  },
+  {
+    "family": "ridge",
+    "file": "models/ridge.joblib",
+    "format": "joblib"
+  },
+  {
+    "family": "random_forest",
+    "seed": 11,
+    "file": "models/forest_seed_11.joblib",
+    "format": "joblib"
+  },
+  {
+    "family": "random_forest",
+    "seed": 22,
+    "file": "models/forest_seed_22.joblib",
+    "format": "joblib"
+  },
+  {
+    "family": "random_forest",
+    "seed": 33,
+    "file": "models/forest_seed_33.joblib",
+    "format": "joblib"
+  }
+]

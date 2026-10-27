@@ -1,0 +1,7 @@
+model,width,parameters
+cnn,8,1593
+cnn,16,4761
+lstm,8,1113
+lstm,16,2521
+cnn_lstm,8,1265
+cnn_lstm,16,3337

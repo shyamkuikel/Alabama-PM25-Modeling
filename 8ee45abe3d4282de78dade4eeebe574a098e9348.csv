@@ -1,0 +1,11 @@
+sheet,county,aqs_site,site_name,latitude,longitude,units
+Baldwin,Baldwin,01-003-0010,"FAIRHOPE, Alabama",30.497478,-87.880258,Micrograms/cubic meter (LC)
+Clay,Clay,01-027-0001,ASHLAND,33.284928,-85.803608,Micrograms/cubic meter (LC)
+Dekalb,DeKalb,01-049-1003,CROSSVILLE,34.288567,-85.969858,Micrograms/cubic meter (LC)
+Etohaw,Etowah,01-055-0010,GADSDEN C. COLLEGE,33.98821,-85.992556,Micrograms/cubic meter (LC)
+Jefferson_NB,Jefferson,01-073-0023,North Birmingham,33.553056,-86.815,Micrograms/cubic meter (LC)
+Mobile,Mobile,01-097-0003,CHICKASAW,30.770181,-88.087761,Micrograms/cubic meter (LC)
+Montgomery,Montgomery,01-101-1002,"MOMS, ADEM",32.412811,-86.263394,Micrograms/cubic meter (LC)
+Morgan,Morgan,01-103-0011,"DECATUR, Alabama",34.530717,-86.967536,Micrograms/cubic meter (LC)
+Sumter,Sumter,01-119-0003,"Ward, Sumter Co.",32.362606,-88.277992,Micrograms/cubic meter (LC)
+Tuscaloosa,Tuscaloosa,01-125-0011,"Duncanville Middle School, Duncanville (Tuscaloosa) Alabama",33.095379,-87.481507,Micrograms/cubic meter (LC)

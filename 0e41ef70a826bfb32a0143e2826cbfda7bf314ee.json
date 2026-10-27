@@ -1,0 +1,10 @@
+{
+  "source_unchanged": true,
+  "preprocessing_selection_ends_before_july": true,
+  "preprocessing_refit_ends_before_october": true,
+  "all_windows_end_day_before_target": true,
+  "all_families_same_test_dates": true,
+  "six_model_families": true,
+  "all_predictions_finite": true,
+  "neural_and_forest_reload_verified": true
+}

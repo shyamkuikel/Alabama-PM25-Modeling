@@ -1,0 +1,44 @@
+{
+  "cnn": {
+    "width": 8,
+    "mean_validation_mae": 1.8253764537064596,
+    "epochs_by_seed": {
+      "11": 1,
+      "22": 3,
+      "33": 1
+    }
+  },
+  "lstm": {
+    "width": 8,
+    "mean_validation_mae": 1.6934440443587029,
+    "epochs_by_seed": {
+      "11": 9,
+      "22": 11,
+      "33": 12
+    }
+  },
+  "cnn_lstm": {
+    "width": 16,
+    "mean_validation_mae": 1.6910370853375312,
+    "epochs_by_seed": {
+      "11": 7,
+      "22": 9,
+      "33": 14
+    }
+  },
+  "ridge": {
+    "alpha": 1000.0,
+    "validation_mae": 1.9010007278547267
+  },
+  "random_forest": {
+    "config": {
+      "n_estimators": 150,
+      "max_depth": 6,
+      "min_samples_leaf": 15,
+      "max_features": 0.7,
+      "criterion": "squared_error",
+      "n_jobs": 2
+    },
+    "mean_validation_mae": 1.716161088640006
+  }
+}

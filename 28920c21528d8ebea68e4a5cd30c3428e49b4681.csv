@@ -1,0 +1,10 @@
+seed,comparison,mae_difference
+11,cnn_lstm_minus_cnn,-0.28415427266219906
+22,cnn_lstm_minus_cnn,-0.34372554439010772
+33,cnn_lstm_minus_cnn,-0.38685443026243238
+11,cnn_lstm_minus_lstm,0.024605855507866981
+22,cnn_lstm_minus_lstm,-0.0016052190057678217
+33,cnn_lstm_minus_lstm,-0.037959353478218993
+11,cnn_lstm_minus_random_forest,-0.013982801625938457
+22,cnn_lstm_minus_random_forest,-0.085517412232712253
+33,cnn_lstm_minus_random_forest,-0.11332694666673815

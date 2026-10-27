@@ -1,0 +1,62 @@
+{
+  "device": "cpu",
+  "architecture": "arm64",
+  "lookback": 14,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "width_candidates": [
+    8,
+    16
+  ],
+  "counts": {
+    "selection_train": 1620,
+    "validation": 902,
+    "refit": 2522,
+    "test": 897
+  },
+  "elapsed_seconds": 60.42310554115102,
+  "settings": {
+    "workbook": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/Meterological_data_ALAbama_copy.xlsx",
+    "output": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/initial_study/07_prediction/model_comparison/results",
+    "device": "cpu",
+    "lookback": 14,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "widths": [
+      8,
+      16
+    ],
+    "epochs": 80,
+    "patience": 12,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "rf_trees": 150,
+    "bootstrap": 1000,
+    "threads": 2
+  },
+  "input_sha256": "b542b986e1a33c3fce13964b714a4b9551baf78a8d614bd5edb9a909fb9a77a2",
+  "code_sha256": {
+    "compare_models.py": "3f4dfdaf1f2d952adfca92c2ab52750d5a22c9c56f236f03d781807c92c5c1b5",
+    "models.py": "6f9fdcac41e4f44b1f3737d45e8a236018ed2c484153c0e395781909ec57e0e7",
+    "data.py": "815588fbf45ad058d8cd96d5564ede3e1fcf09bd55aeabdd0d3288c3b0d65074",
+    "train_cnn_lstm.py": "cd8b6c486e3765615eca676b0b289c84d25511b22fd238553a0a913e12c36c6f"
+  },
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "test_status": "exploratory: October-December outcomes were inspected in previous studies",
+  "primary_prediction": "mean of all prespecified seeds per stochastic model family",
+  "units": "unverified workbook units"
+}

@@ -1,0 +1,11 @@
+sheet,matched,compared,workbook_present,source_present,workbook_only,source_only
+Baldwin,335,351,359,351,8,0
+Clay,346,354,359,354,5,0
+Dekalb,356,358,359,358,1,0
+Etohaw,347,354,356,354,2,0
+Jefferson_NB,313,358,358,358,0,0
+Mobile,354,358,363,358,5,0
+Montgomery,321,355,357,356,2,1
+Morgan,351,355,356,355,1,0
+Sumter,353,356,364,356,8,0
+Tuscaloosa,351,355,360,355,5,0
