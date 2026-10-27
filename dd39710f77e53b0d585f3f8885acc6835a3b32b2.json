@@ -1,0 +1,420 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "3650 unique county/date records",
+      "passed": true
+    },
+    {
+      "check": "365 daily dates per county",
+      "passed": true
+    },
+    {
+      "check": "all PM2.5 source measurements and missingness preserved",
+      "passed": true
+    },
+    {
+      "check": "source workbook copies unchanged and identical",
+      "passed": true
+    },
+    {
+      "check": "11 negative readings retained",
+      "passed": true
+    },
+    {
+      "check": "county means reconcile independently",
+      "passed": true
+    },
+    {
+      "check": "monthly weighted means reconcile to annual",
+      "passed": true
+    },
+    {
+      "check": "episodes use consecutive calendar days",
+      "passed": true
+    },
+    {
+      "check": "episode durations reconcile to high-day counts",
+      "passed": true
+    },
+    {
+      "check": "missing-day episode boundary",
+      "passed": true
+    },
+    {
+      "check": "calendar HAC agrees with statsmodels on complete calendar",
+      "passed": true
+    },
+    {
+      "check": "HAC retains real calendar spacing across missing days",
+      "passed": true
+    },
+    {
+      "check": "constant Sumter rain omitted",
+      "passed": true
+    },
+    {
+      "check": "multiple-comparison adjustment valid",
+      "passed": true
+    },
+    {
+      "check": "lag-one correlation reconciles",
+      "passed": true
+    },
+    {
+      "check": "high county counts bounded by reporting counties",
+      "passed": true
+    },
+    {
+      "check": "every forecast validation train date precedes validation month",
+      "passed": true
+    },
+    {
+      "check": "prediction test dates are Oct-Dec only",
+      "passed": true
+    },
+    {
+      "check": "finite predictions and actual observations",
+      "passed": true
+    },
+    {
+      "check": "all models have identical evaluation dates",
+      "passed": true
+    },
+    {
+      "check": "one pretest-selected family per county",
+      "passed": true
+    },
+    {
+      "check": "persistence uses exactly previous calendar day",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Baldwin/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Clay/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation DeKalb/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Etowah/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Jefferson/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Mobile/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Montgomery/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Morgan/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Sumter/training_mean",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/persistence",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/random_forest",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/ridge_lag_calendar",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/ridge_pca_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/ridge_weather",
+      "passed": true
+    },
+    {
+      "check": "MAE reconciliation Tuscaloosa/training_mean",
+      "passed": true
+    },
+    {
+      "check": "saved imputer medians use Jan-Sep training rows only",
+      "passed": true
+    },
+    {
+      "check": "saved model reproduces stored predictions",
+      "passed": true
+    },
+    {
+      "check": "study 1 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 1 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 2 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 2 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 3 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 3 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 4 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 4 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 5 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 5 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 6 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 6 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "study 7 report and runnable entry point",
+      "passed": true
+    },
+    {
+      "check": "study 7 tables and figures",
+      "passed": true
+    },
+    {
+      "check": "source hash matches recorded input",
+      "passed": true
+    }
+  ],
+  "check_count": 99,
+  "figure_count": 14,
+  "figures": [
+    "01_county_comparison/county_means_intervals.png",
+    "01_county_comparison/county_boxplots.png",
+    "02_monthly_patterns/daily_and_rolling_series.png",
+    "02_monthly_patterns/monthly_heatmap.png",
+    "02_monthly_patterns/monthly_lines.png",
+    "03_pollution_episodes/high_day_timelines.png",
+    "04_weather_associations/weather_scatterplots.png",
+    "04_weather_associations/month_adjusted_correlation_heatmap.png",
+    "05_lagged_relationships/autocorrelation_heatmap.png",
+    "05_lagged_relationships/weather_lag_correlations.png",
+    "06_simultaneous_peaks/adjusted_county_correlations.png",
+    "06_simultaneous_peaks/simultaneous_high_days.png",
+    "07_prediction/heldout_selected_forecasts.png",
+    "07_prediction/heldout_mae_heatmap.png"
+  ],
+  "note": "Numerical/structural checks only; visual review is recorded separately."
+}

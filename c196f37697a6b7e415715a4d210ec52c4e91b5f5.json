@@ -1,0 +1,8 @@
+{
+  "raw_and_clean_rows": 3650,
+  "counties": 10,
+  "dates_preserved": true,
+  "all_numeric_columns_reconciled": true,
+  "missingness_preserved": true,
+  "unique_county_date_keys": true
+}

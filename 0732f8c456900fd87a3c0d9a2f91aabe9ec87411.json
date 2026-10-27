@@ -1,0 +1,9 @@
+{
+  "adjacency_source": "https://www2.census.gov/geo/docs/reference/county_adjacency/county_adjacency2025.txt",
+  "adjacency_sha256": "8233d2aed342f62eb02bae9f9002ad1d8fc6bd82d739185eba8bad832bf8fc87",
+  "pm25_input_sha256": "8bc9b1c584130aec0492ac4624c6198ef984765fb87bfc552bb94203167a7b53",
+  "seed": 20251011,
+  "bootstrap_replicates": 1000,
+  "block_days": 7,
+  "all_45_correlations_match_previous_analysis": true
+}

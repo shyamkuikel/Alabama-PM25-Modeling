@@ -1,0 +1,10 @@
+{
+  "source_workbook": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/Meterological_data_ALAbama_copy.xlsx",
+  "source_sha256": "b542b986e1a33c3fce13964b714a4b9551baf78a8d614bd5edb9a909fb9a77a2",
+  "rows_raw": 3650,
+  "rows_clean": 3650,
+  "counties": 10,
+  "negative_policy": "missing",
+  "observed_pm25": 3580,
+  "cleaning": "Normalize names/dates, enforce unique keys, numeric/finite values; insert missing daily rows; replace impossible weather and joint zero placeholders with missing. No target imputation, future interpolation, clipping or data-driven outlier deletion."
+}

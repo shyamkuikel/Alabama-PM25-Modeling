@@ -1,0 +1,11 @@
+county,rows,observed_pm25,missing_pm25,negative_source_pm25,missing_temperature,missing_dew_point,missing_humidity,missing_wind,missing_pressure,missing_rain
+Baldwin,365,359,6,0,2,2,2,2,2,2
+Clay,365,357,8,2,0,0,0,0,0,0
+DeKalb,365,357,8,2,0,0,0,0,0,0
+Etowah,365,356,9,0,10,10,10,10,10,10
+Jefferson,365,358,7,0,0,0,0,0,0,0
+Mobile,365,360,5,3,6,6,6,6,6,6
+Montgomery,365,356,9,1,8,8,8,8,8,8
+Morgan,365,356,9,0,10,10,10,10,10,10
+Sumter,365,364,1,0,14,14,14,14,14,14
+Tuscaloosa,365,357,8,3,0,0,0,0,0,0

@@ -1,0 +1,22 @@
+{
+  "input": "/Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/Ana_SK/Meterological_data_ALAbama_copy.xlsx",
+  "sha256": "b542b986e1a33c3fce13964b714a4b9551baf78a8d614bd5edb9a909fb9a77a2",
+  "study_code_sha256": "57242afc7418e167a23d11e857b4e2a39faf0a9d8457f1615947ff4d6570a5b5",
+  "seed": 20251011,
+  "bootstrap_replicates": 1000,
+  "bootstrap_block_days": 7,
+  "period": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "units": "unverified workbook units",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1"
+  }
+}

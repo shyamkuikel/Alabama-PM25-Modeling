@@ -1,0 +1,21 @@
+{
+  "boundary_source": "https://www2.census.gov/geo/tiger/GENZ2025/kml/cb_2025_us_county_500k.zip",
+  "vintage": 2025,
+  "scale": "1:500,000",
+  "download_date": "2026-10-11",
+  "boundary_sha256": "fd8e3d57d59d43ab16692ba62a3c139705a899acd6ad4db3d66a05e3a21a54c6",
+  "projection": "Spherical equirectangular, standard parallel 32.5N, central meridian 86.8W",
+  "alabama_counties": 67,
+  "highlighted_counties": [
+    "Baldwin",
+    "Clay",
+    "DeKalb",
+    "Etowah",
+    "Jefferson",
+    "Mobile",
+    "Montgomery",
+    "Morgan",
+    "Sumter",
+    "Tuscaloosa"
+  ]
+}

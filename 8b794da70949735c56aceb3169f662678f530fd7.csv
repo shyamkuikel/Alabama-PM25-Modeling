@@ -1,0 +1,11 @@
+county,source_sheet,original_rows,calendar_rows,observed_pm25,missing_pm25,negative_pm25,weather_missing_cells_after_flags,constant_weather
+Baldwin,Baldwin,365,365,359,6,0,12,
+Clay,Clay,365,365,359,6,2,0,
+DeKalb,Dekalb,365,365,359,6,2,0,
+Etowah,Etohaw,365,365,356,9,0,60,
+Jefferson,Jefferson_NB,365,365,358,7,0,0,
+Mobile,Mobile,365,365,363,2,3,36,
+Montgomery,Montgomery,365,365,357,8,1,48,
+Morgan,Morgan,365,365,356,9,0,60,
+Sumter,Sumter,365,365,364,1,0,84,rain
+Tuscaloosa,Tuscaloosa,365,365,360,5,3,0,
