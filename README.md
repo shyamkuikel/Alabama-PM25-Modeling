@@ -1,29 +1,56 @@
 # PM2.5 Forecasting Across Alabama Counties
 
-**Shyam Prasad Kuikel**
+Shyam Prasad Kuikel
 
-Model comparisons and high-pollution episodes using daily 2025 monitoring series.
+This research project examines when statistical, machine-learning and neural-network models improve next-day PM2.5 forecasts over persistence, and whether those improvements hold across ten Alabama monitoring series and high-pollution days. It uses daily 2025 observations and includes exploratory meteorological analysis, PCA, reproducible model comparisons and saved results.
 
+The county names identify monitoring series; the observations do not represent county-wide exposure estimates. This is an exploratory research project, not an operational forecasting service.
 
-Study area: ten monitoring series in Alabama. The complete archives include all figures and reports.
+## Start with the current study
 
-All 67 Alabama counties are shown; the ten study counties are highlighted. [Map sources and code](Ana_SR/initial_study/study_area_map/README.md).
+- [Methods, data preparation and reproduction instructions](Ana_SK/pooled_county_study/README.md)
+- [Results and scientific limitations](Ana_SK/pooled_county_study/STUDY_RESULTS_AND_CONCLUSIONS.md)
+- [Concise study report PDF](Ana_SK/pooled_county_study/PM25_Pooled_County_Study_Summary.pdf)
+- [Verification performed for this repository](VERIFICATION.md)
 
-Daily 2025 observations from ten Alabama county-labeled monitoring series. The repository contains exploratory analyses, weather PCA, source matching, maps, neighboring-county comparisons and classical/deep-learning forecasting.
+## Study area
 
-The analysis folders were renamed from `PCA_SR` to `Ana_SR` and from `PCA` to `Ana_SK`. Code paths and README links use the new names. Existing PDFs and recorded run metadata retain their original paths and code hashes as historical provenance; their numerical results and input data are unchanged.
+![Alabama monitoring-series study area](Ana_SK/initial_study/study_area_map/Alabama_study_counties.png)
 
-## Download the complete study
+[Map sources and limitations](Ana_SK/initial_study/study_area_map/README.md).
 
-The complete project, including workbooks, figures, models and reports, is provided in the `complete-study-part-*.zip` archives. Extract all parts into the same folder before running the commands below. Source scripts and documentation are also browsable in this repository.
+## Experiment
 
-## Start here: pooled forecasting
+The current pooled experiment compares persistence, ridge regression, Random Forest, CNN, LSTM and CNN-LSTM. Training and tuning use chronological expanding-window validation within January–September 2025. October–December provides the exploratory evaluation period. Input imputation and scaling are fitted on training periods, and all models are compared on the same 887 evaluation cases.
 
-[Ana_SR/pooled_county_study](Ana_SR/pooled_county_study/README.md) is the recommended current experiment: merged raw/clean data, separate model modules, three expanding-window validation folds, hyperparameter searches, fitted models and full-run results.
+The evaluation months had already been examined in earlier analyses. Consequently, these results are exploratory rather than an untouched confirmatory test. The supplied study documentation explains the tuning design, seed averaging, preprocessing and remaining data-provenance limitations.
+
+## Saved results
+
+| Model | MAE | RMSE | R squared | MAE on high-pollution days |
+| --- | ---: | ---: | ---: | ---: |
+| CNN-LSTM | 2.113 | 2.734 | 0.355 | 4.435 |
+| LSTM | 2.133 | 2.750 | 0.347 | 4.448 |
+| Ridge | 2.186 | 2.823 | 0.312 | 4.312 |
+| CNN | 2.186 | 2.870 | 0.289 | 3.872 |
+| Random Forest | 2.191 | 2.808 | 0.319 | 4.370 |
+| Persistence | 2.478 | 3.299 | 0.060 | 3.674 |
+
+MAE and RMSE are in micrograms per cubic metre. The high-pollution subset contains 27 cases under the study's specified threshold. CNN-LSTM had the lowest aggregate evaluation MAE, but the paired uncertainty interval for its advantage over LSTM crossed zero. Persistence performed better than the learned models on the high-pollution subset. Better average performance therefore does not establish better episode prediction.
+
+![Comparison of forecast models](Ana_SK/pooled_county_study/results/model_comparison.png)
+
+![Chronological validation results](Ana_SK/pooled_county_study/results/validation_by_fold.png)
+
+[Full metrics](Ana_SK/pooled_county_study/results/pooled_test_metrics.csv) and [paired model comparisons](Ana_SK/pooled_county_study/results/paired_mae_intervals.csv).
+
+## Reproduce the current study
+
+Python 3.12 and a CPU are sufficient; Apple MPS acceleration is optional. Historical runs were performed on Apple Silicon. Consult VERIFICATION.md for what was rerun in the present environment.
 
 ```sh
 git clone https://github.com/shyamkuikel/Alabama-PM25-Modeling.git
-cd Alabama-PM25-Modeling/Ana_SR/pooled_county_study
+cd Alabama-PM25-Modeling/Ana_SK/pooled_county_study
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -32,57 +59,29 @@ python -m unittest -v test_pipeline.py
 python verify_results.py
 ```
 
-Use native ARM64 Python 3.12 on an M1 Mac. CPU execution is verified; `--device auto` probes Apple's MPS backend and falls back to CPU. To run the complete experiment again:
+To train again without overwriting the supplied results:
 
 ```sh
-python run_study.py --data data/merged_counties.xlsx --device auto --output results_new
+python run_study.py --data data/merged_counties.xlsx --device cpu --output results_new
 python verify_results.py --data data/merged_counties.xlsx --results results_new
 ```
 
-All ten counties and the full year are processed. Missing/invalid targets are excluded rather than imputed. The saved full run used 3,650 panel rows, 3,580 observed cleaned PM2.5 values, 1,783 validation cases and 887 shared test cases, with all candidate configurations, three stochastic seeds and 1,000 bootstrap replicates. It was not a smoke run. See [full-run evidence](Ana_SR/pooled_county_study/FULL_RUN_VERIFICATION.md).
+## Project contents
 
-## Read results directly on GitHub
-
-Each PDF now has an inline README summary with tables and figures:
-
-- [Weather PCA results](Ana_SR/README.md#results-summary-at-a-glance)
-- [Initial county, weather and prediction findings](Ana_SR/initial_study/README.md#results-summary-at-a-glance)
-- [Current pooled classical/neural comparison](Ana_SR/pooled_county_study/README.md#results-summary-at-a-glance)
-
-The original PDFs remain available and unchanged.
-
-## Repository guide
-
-| Location | Contents |
+| Folder | Contents |
 | --- | --- |
-| [Ana_SK](Ana_SK/README.md) | Original workbook and R PCA workflow |
-| [Ana_SR](Ana_SR/README.md) | Python weather-variable PCA screening |
-| [initial_study](Ana_SR/initial_study/README.md) | Seven exploratory analyses and historical prediction results |
-| [earlier model comparison](Ana_SR/initial_study/07_prediction/model_comparison/README.md) | Earlier six-model experiment with a single validation period |
-| [study area map](Ana_SR/initial_study/study_area_map/README.md) | Census county boundaries and maps |
-| [adjacent counties](Ana_SR/initial_study/08_adjacent_counties/REPORT.md) | Neighboring-county PM2.5 associations |
-| [source findings](Ana_SR/initial_study/07_prediction/model_comparison/source_verification/SOURCE_FINDINGS.md) | EPA matching and airport weather-source investigation |
-| [pooled summary PDF](Ana_SR/pooled_county_study/PM25_Pooled_County_Study_Summary.pdf) | Four-page methods and findings summary |
+| [Ana_SK/pooled_county_study](Ana_SK/pooled_county_study) | Current forecasting pipeline, data, models and results |
+| [Ana_SK](Ana_SK/README.md) | Python meteorological PCA screening |
+| [R_PCA](R_PCA/README.md) | R PCA and component–PM2.5 association workflow |
+| [Ana_SK/initial_study](Ana_SK/initial_study/README.md) | Earlier exploratory analyses and forecasting experiments |
+| [Source verification](Ana_SK/initial_study/07_prediction/model_comparison/source_verification/SOURCE_FINDINGS.md) | PM2.5 matching, weather investigation and provenance limits |
 
-Source: `Ana_SK/Meterological_data_ALAbama.xlsx`. Analysis copy: `Ana_SR/Meterological_data_ALAbama_copy.xlsx`. Combined workbook: `Ana_SR/pooled_county_study/data/merged_counties.xlsx`. Raw source measurements are preserved.
+Earlier workflows remain available for context. Their results use different preprocessing or experimental designs and should not be compared as if they were identical experiments. The large source-weather CSV is stored losslessly as `weather_2025.csv.gz`; its source-verification script reads it directly.
 
-## Findings and limits
+## Research limitations
 
-LSTM led selected validation MAE (1.876 micrograms/m³). CNN-LSTM led exploratory test MAE (2.113), followed by LSTM (2.133); persistence was 2.478. The hybrid-versus-LSTM interval crossed zero. Persistence performed better on the 27 high-pollution test cases. Read the [complete findings](Ana_SR/pooled_county_study/STUDY_RESULTS_AND_CONCLUSIONS.md).
+Only one year is available. Shared weather series and dependence among monitoring locations limit independent information. Source reporting delays and parts of the weather provenance remain unresolved. A new, previously untouched year is needed to assess temporal generalization. The analyses describe predictive performance and associations, not causal meteorological effects.
 
-Only one year is available. Test months were examined earlier, so evaluation is exploratory. County dependence, reused weather and incomplete weather provenance limit interpretation. These are monitor-site observations, not county-wide exposure estimates. Source matching supports PM2.5 units but does not establish all original processing or redistribution terms; no new secondary-data license is asserted.
+## Data and software attribution
 
-## Reproduce earlier analyses
-
-Install each workflow's own requirements in a separate environment.
-
-```sh
-# From repository root, after installing Ana_SR/requirements.txt
-python Ana_SR/pca_variable_ranking.py Ana_SK/Meterological_data_ALAbama.xlsx --output Ana_SR/results_reproduced
-# After installing Ana_SR/initial_study/requirements.txt
-cd Ana_SR/initial_study
-python study.py --study all
-python verify.py
-```
-
-Initial-study runs overwrite generated outputs. They retain negative concentrations with sensitivity checks; the pooled study marks them missing, so counts differ. Other workflows document commands in their folders. See [GitHub update instructions](GITHUB_UPDATE.md) to review, commit and push this update.
+External measurement data, map boundaries, publications and software retain their original attribution. Source information is documented in the analysis folders. No new license is asserted over third-party datasets. This repository is maintained by Shyam Prasad Kuikel.
