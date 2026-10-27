@@ -4,3 +4,6 @@
 *.zip binary
 *.pt binary
 *.joblib binary
+
+# Saved HTML visualizations are generated analysis outputs.
+*.html linguist-generated=true
