@@ -1,0 +1,27 @@
+Python architecture=arm64 | torch=2.14.1 | device=cpu
+seed=11 selection epoch=1 training_MAE_z=0.7699 validation_MAE=1.8259
+seed=11 selection epoch=10 training_MAE_z=0.6154 validation_MAE=1.6959
+seed=11: validation-selected training duration=7 epochs
+seed=11 refit epoch=1 training_MAE_z=0.7077
+seed=22 selection epoch=1 training_MAE_z=0.7699 validation_MAE=1.8262
+seed=22 selection epoch=10 training_MAE_z=0.6178 validation_MAE=1.6945
+seed=22 selection epoch=20 training_MAE_z=0.5621 validation_MAE=1.7852
+seed=22: validation-selected training duration=9 epochs
+seed=22 refit epoch=1 training_MAE_z=0.7075
+seed=33 selection epoch=1 training_MAE_z=0.7699 validation_MAE=1.8265
+seed=33 selection epoch=10 training_MAE_z=0.6387 validation_MAE=1.7221
+seed=33 selection epoch=20 training_MAE_z=0.5763 validation_MAE=1.7427
+seed=33: validation-selected training duration=14 epochs
+seed=33 refit epoch=1 training_MAE_z=0.7075
+seed=33 refit epoch=10 training_MAE_z=0.5754
+Matplotlib is building the font cache; this may take a moment.
+                       model   n      mae     rmse     bias  r_squared
+           cnn_lstm_ensemble 897 2.111081 2.717373 0.261550   0.381302
+                 persistence 897 2.476366 3.298672 0.014604   0.088287
+      previous_random_forest 897 2.269937 2.876371 0.875156   0.306782
+ previous_ridge_lag_calendar 897 2.507192 3.103734 0.742363   0.192860
+  previous_ridge_pca_weather 897 2.298211 2.866535 0.559671   0.311515
+      previous_ridge_weather 897 2.281074 2.867637 0.467256   0.310985
+      previous_training_mean 897 2.877714 3.497535 1.020340  -0.024954
+previous_validation_selected 897 2.276149 2.876205 0.866872   0.306862
+Outputs: /Users/sijanregmi/Documents/Codex/2026-10-11/can/PM2.5_Study/PCA_SR/initial_study/07_prediction/cnn_lstm/results

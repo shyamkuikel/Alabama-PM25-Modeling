@@ -1,0 +1,20 @@
+{
+  "windows_end_before_target": true,
+  "all_windows_exact_lookback": true,
+  "no_test_dates_in_refit": true,
+  "preprocessing_fit_before_test": true,
+  "finite_test_predictions": true,
+  "checkpoint_reload_predictions_verified": true,
+  "county_specific_window_construction": true,
+  "unit_tests_passed": 6,
+  "training_seeds_completed": [
+    11,
+    22,
+    33
+  ],
+  "test_rows": 897,
+  "cpu_arm64_training_verified": true,
+  "mps_gpu_execution_verified": false,
+  "visual_review": "Both learning-curve and ten-county test forecast figures reviewed.",
+  "future_target_inference_smoke_test_passed": true
+}
